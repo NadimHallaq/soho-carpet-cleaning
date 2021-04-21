@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -27,10 +27,11 @@ export default function Hero() {
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 ">
           <div class="relative shadow-xl sm:overflow-hidden h-96">
             <div class="absolute inset-0">
-              <img
-                class="h-full w-full object-cover"
+              <Image
+                className="h-full w-full object-cover"
                 src="/images/hero.jpg"
                 alt="Luxury Oriental Carpet Photo"
+                layout="fill"
               />
               <div class="absolute inset-0 bg-dark-blue opacity-30"></div>
             </div>

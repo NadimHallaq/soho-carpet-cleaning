@@ -1,12 +1,9 @@
 import {
-  InboxIcon,
-  SparklesIcon,
-  AnnotationIcon,
   GlobeAltIcon,
   LightningBoltIcon,
-  MailIcon,
   ScaleIcon,
 } from "@heroicons/react/outline";
+import Image from "next/image";
 
 const transferFeatures = [
   {
@@ -52,7 +49,7 @@ export default function Commercial() {
                 {transferFeatures.map((item) => (
                   <div key={item.id} className="">
                     <dt>
-                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-dark-gold text-white">
+                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-sm bg-dark-gold text-white">
                         <item.icon className="h-6 w-6" aria-hidden="true" />
                       </div>
                       <p className="ml-16 text-lg leading-6 font-medium text-dark-white">
@@ -70,10 +67,11 @@ export default function Commercial() {
         </div>
         <div className="mt-12 sm:mt-16 lg:mt-0 ">
           <div className=" lg:px-0 lg:m-0 lg:relative lg:h-full lg:flex justify-center lg:px-2">
-            <img
-              className="w-full h-64 object-cover  md:rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute   lg:h-full lg:w-full lg:max-w-none"
+            <Image
+              className="w-full h-64 object-cover  md:rounded-sm shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute  lg:h-full lg:w-full lg:max-w-none"
               src="/images/commercial.jpg"
-              alt="Inbox user interface"
+              alt="residential Carpet Cleaning"
+              layout="fill"
             />
           </div>
         </div>

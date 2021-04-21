@@ -36,10 +36,10 @@ export default function Services() {
   return (
     <div className="relative">
       <div>
-        <h2 class="text-center text-3xl leading-8 font-extrabold tracking-tight text-dark-white sm:text-4xl">
+        <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-dark-white sm:text-4xl">
           What We Offer
         </h2>
-        <p class="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500 px-4">
+        <p className="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500 px-4">
           Soho Carpet Cleaning offers a Range of Different Serivices including
           Residential and Commercial Cleaning, plus Carpet Repairs done with
           outmost care and delicasy!
@@ -64,7 +64,7 @@ export default function Services() {
                   {transferFeatures.map((item) => (
                     <div key={item.id} className="">
                       <dt>
-                        <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-dark-gold text-white">
+                        <div className="absolute flex items-center justify-center h-12 w-12 rounded-sm bg-dark-gold text-white">
                           <item.icon className="h-6 w-6" aria-hidden="true" />
                         </div>
                         <p className="ml-16 text-lg leading-6 font-medium text-white">
@@ -81,10 +81,11 @@ export default function Services() {
             </div>
             <div className="mt-12 sm:mt-16 lg:mt-0 ">
               <div className=" lg:px-0 lg:m-0 lg:relative lg:h-full lg:flex justify-center ">
-                <img
-                  className="w-full h-64 object-cover  md:rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute  lg:h-full lg:w-full lg:max-w-none"
+                <Image
+                  className="w-full h-64 object-cover  md:rounded-sm shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute  lg:h-full lg:w-full lg:max-w-none"
                   src="/images/residential.jpg"
-                  alt="Inbox user interface"
+                  alt="residential Carpet Cleaning"
+                  layout="fill"
                 />
               </div>
             </div>

@@ -1,7 +1,4 @@
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @font-face {
   font-family: 'Domine';
@@ -17,5 +14,5 @@
 
 
 html {
-  font-family: Domine, Helvetica;
+  font-family: Domine, Georgia, 'Times New Roman', Times, serif;
 }

@@ -5,7 +5,7 @@ const DropDown = () => {
     <div class="relative inline-block text-left">
       <Menu>
         <Menu.Button
-          className="bg-dark-gold px-4 py-2 rounded-md"
+          className="bg-dark-gold px-4 py-2  hover:bg-dark-blue hover:text-dark-gold focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-white"
           id="options-menu"
           aria-expanded="true"
           aria-haspopup="true"
@@ -23,31 +23,37 @@ const DropDown = () => {
             />
           </svg>
         </Menu.Button>
-        <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none py-1">
-          <Menu.Item
-            as="a"
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-          >
-            <Link href="/">Home</Link>
-          </Menu.Item>
-          <Menu.Item
-            as="a"
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-          >
-            <Link href="/">Residential</Link>
-          </Menu.Item>
-          <Menu.Item
-            as="a"
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-          >
-            <Link href="/">Commercial</Link>
-          </Menu.Item>
-          <Menu.Item
-            as="a"
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-          >
-            <Link href="/">About us</Link>
-          </Menu.Item>
+        <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56  shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none ">
+          <Link href="/">
+            <Menu.Item
+              as="button"
+              className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 overflow-hidden"
+            >
+              Home
+            </Menu.Item>
+          </Link>
+          <Link href="/about">
+            <Menu.Item
+              as="button"
+              className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            >
+              About Soho
+            </Menu.Item>
+          </Link>
+          <div className="flex ">
+            <Menu.Item
+              as="button"
+              className="text-black w-1/2 text-center bg-red-500 px-2 py-2"
+            >
+              En
+            </Menu.Item>
+            <Menu.Item
+              as="button"
+              className="text-black w-1/2 text-center bg-blue-500 px-2 py-2"
+            >
+              Fr
+            </Menu.Item>
+          </div>
         </Menu.Items>
       </Menu>
     </div>
