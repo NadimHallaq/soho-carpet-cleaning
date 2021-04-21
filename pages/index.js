@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
-import Commercial from "../components/Commercial";
+import Commercial from "../components/commercial";
 import ChooseUs from "../components/ChooseUs";
 
 export default function Home() {
