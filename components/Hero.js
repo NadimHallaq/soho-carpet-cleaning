@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div>
-      <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
+      <main class="mt-16 mx-auto max-w-7xl px-2 sm:mt-24">
         <div class="text-center">
           <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
             <span class="block xl:inline font-extrabold text-dark-white">
@@ -24,7 +24,7 @@ export default function Hero() {
       </main>
       <div class="relative sm:mt-12 mt-4 mb-12">
         <div class="absolute inset-x-0 bottom-0 "></div>
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 ">
+        <div class="max-w-7xl mx-auto ">
           <div class="relative shadow-xl sm:overflow-hidden h-96">
             <div class="absolute inset-0">
               <Image

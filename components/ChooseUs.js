@@ -35,7 +35,7 @@ const features = [
 export default function ChooseUs() {
   return (
     <div className="pt-6 pb-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 md:px-2">
         <div className="lg:text-center">
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-dark-white sm:text-4xl">
             Why Choose Us
