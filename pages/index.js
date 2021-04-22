@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Soho Carpet Cleaning</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/logo.png" />
       </Head>
 
       <Hero />

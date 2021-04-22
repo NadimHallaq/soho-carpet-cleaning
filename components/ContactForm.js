@@ -1,5 +1,6 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useRef, useEffect, useState } from "react";
+import Form from "./Form";
 
 const Example = () => (
   <div className="flex flex-col ">
@@ -47,8 +48,8 @@ export default function Get() {
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth="2"
               d="M13 7l5 5m0 0l-5 5m5-5H6"
             />
@@ -93,22 +94,7 @@ export default function Get() {
               leaveTo="opacity-0 scale-95"
             >
               <div className="inline-block w-full max-w-lg  bg-white transition-all transform space-y-4 p-4 sm:p-12">
-                <Dialog.Title
-                  as="h3"
-                  className="text-xl font-bold leading-6 text-gray-900 pt-4"
-                >
-                  Get Quote
-                </Dialog.Title>
-                <Example />
-                <Example />
-                <Example />
-                <button
-                  type="button"
-                  className="text-white bg-black  w-full py-2"
-                  onClick={closeModal}
-                >
-                  Submit
-                </button>
+                <Form close={closeModal} />
               </div>
             </Transition.Child>
           </div>

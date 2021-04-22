@@ -83,6 +83,7 @@ export default function Services() {
                 src="/images/residential.jpg"
                 layout="fill"
                 objectFit="cover"
+                priority={true}
               />
             </div>
           </div>

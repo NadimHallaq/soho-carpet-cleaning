@@ -31,7 +31,7 @@ const transferFeatures = [
 
 export default function Commercial() {
   return (
-    <div className="mt-2 pb-12">
+    <div className="mt-4 sm:mt-16 pb-12">
       <div className="mx-auto max-w-7xl lg:px-2 grid grid-cols-1 sm:grid-cols-2 sm:grid-flow-col-dense gap-4">
         <div className="px-4  sm:px-6 lg:max-w-none lg:mx-0 lg:px-0 sm:col-start-2 ">
           <div className=" w-full ">
@@ -72,6 +72,7 @@ export default function Commercial() {
               src="/images/commercial.jpg"
               layout="fill"
               objectFit="cover"
+              priority={true}
             />
           </div>
         </div>

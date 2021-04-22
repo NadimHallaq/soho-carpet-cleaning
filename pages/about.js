@@ -39,6 +39,7 @@ export default function About() {
                 src="/images/about-soho.jpg"
                 alt="Luxury Oriental Carpet Photo"
                 layout="fill"
+                priority={true}
               />
               <div className="absolute inset-0 bg-dark-blue opacity-30 "></div>
               <div className="text-black absolute inset-0"></div>
